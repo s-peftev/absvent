@@ -12,6 +12,11 @@ const resolveRoute = (route) => {
   }
 };
 
+const renderPage = (i18next, route) => {
+  const render = resolveRoute(route);
+  render(i18next);
+};
+
 const changeLanguage = (i18next, local) => {
   i18next.changeLanguage(local)
     .then(() => {
@@ -20,7 +25,7 @@ const changeLanguage = (i18next, local) => {
       document.querySelector('.lang__toggle')
         .classList.toggle('lang__toggle_en');
       const url = new URL(window.location);
-      resolveRoute(url.pathname)(i18next);
+      renderPage(i18next, url.pathname);
     });
 };
 
@@ -31,6 +36,7 @@ const burgerMenuToggle = (burgerMenuState) => {
   const burger = document.querySelector('.burger');
   const langToggle = document.querySelector('.lang');
 
+  nav.classList.toggle('header__nav');
   nav.classList.toggle('nav_burger-active');
   langToggle.classList.toggle('header__lang');
   langToggle.classList.toggle('nav__lang');
@@ -51,7 +57,7 @@ const burgerMenuToggle = (burgerMenuState) => {
 export default (i18next) => (path, value) => {
   switch (path) {
     case 'route':
-      resolveRoute(value)(i18next);
+      renderPage(i18next, value);
       break;
 
     case 'burgerMenu':
