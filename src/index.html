@@ -1,14 +1,27 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="uk">
 @@include('./html_modules/head.html', {
-    title: 'TITLE',
+    title: 'AEP',
 })
 <body>
-    @@include('./html_modules/header.html')
-    <main>
-        
-    </main>
-    @@include('./html_modules/footer.html')
-    <script src="js/app.min.js"></script>
+    <div class="wrapper">
+        @@include('./html_modules/header.html')
+        <secton class="parallax">
+            <div class="parallax__content">
+                <div class="parallax__body">
+                    <h1 class="parallax__title title" data-text="parallax_title"></h1>
+                    <div class="parallax__logo-wrap">
+                        <div class="parallax__logo">
+                            <img src="@img/logo_short.png" alt="logo">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </secton>
+        <main>
+            main
+        </main>
+        @@include('./html_modules/footer.html')
+    </div>
 </body>
 </html>

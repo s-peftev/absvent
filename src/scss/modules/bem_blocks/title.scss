@@ -1,0 +1,12 @@
+.title {
+    color: $light_text_color;
+    font-size: 1.625rem;
+    line-height: 1.2;
+    font-weight: 700;
+    text-transform: uppercase;
+    
+    /**MOBILE**/
+    @media (max-width: 767.98px) {
+        font-size: 1.25rem;
+    }
+}

@@ -6,10 +6,10 @@ import newer from 'gulp-newer'; // actual update check
 import gulpIf from 'gulp-if'; // gulp conditions
 
 export default {
-    replace: replace,
-    plumber: plumber,
-    notify: notify,
-    browserSync: browserSync,
-    newer: newer,
-    if: gulpIf,
-}
+  replace,
+  plumber,
+  notify,
+  browserSync,
+  newer,
+  if: gulpIf,
+};

@@ -1,5 +1,187 @@
 @import './nullstyle.scss';
+@import './vars.scss';
+
+@import './modules/bem_blocks/title.scss';
+@import './modules/bem_blocks/nav.scss';
+@import './modules/bem_blocks/burger.scss';
+@import './modules/bem_blocks/lang.scss';
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
 body {
-    color: red;
+    font-family: 'Montserrat', sans-serif;
+    color: $dark_text_color;
+}
+
+[class*="__container"] {
+    max-width: 90%;
+    margin: 0 auto;
+	padding: 0 15px;
+	/**PC**/
+	@media (max-width: 1140px) {
+		
+	}
+	/**TABLET**/
+	@media (max-width: 991.98px) {
+		max-width: 845px;
+	}
+	/**MOBILE**/
+	@media (max-width: 767.98px) {
+		max-width: none;
+	}
+	/**SMALL MOBILE**/
+	@media (max-width: 469.98px) {
+		
+	}
+}
+
+.wrapper {
+    min-height: 100%;
+    overflow: hidden;
+    display: grid;
+    grid-template: 50px 125vh 1fr minmax(auto, 120px) / 1fr;
+    /**MOBILE**/
+	@media (max-width: 767.98px) {
+		grid-template: 50px 125vw 1fr minmax(auto, 120px) / 1fr;
+	}
+}
+
+/****** HEADER ******/
+.header {
+
+	&__container {
+		display: grid;
+        grid-template: 1fr / 160px 100px auto 1fr;
+        align-items: center;
+
+        /**MOBILE**/
+        @media (max-width: 767.98px) {
+            grid-template: 1fr / 160px 1fr auto;
+        }
+        /**SMALL MOBILE**/
+        @media (max-width: 469.98px) {
+            grid-template: 1fr / 160px auto;
+        }
+	}
+
+	&__logo {
+		position: relative;
+        padding: 0 0 50px 0;
+        z-index: 2;
+
+        img {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+	}
+
+	&__lang {
+        /**MOBILE**/
+        @media (max-width: 767.98px) {
+            display: none;
+        }
+	}
+
+	&__contacts {
+		font-size: 0.75rem;
+        margin: 0 30px;
+
+		p {
+            margin: 0 0 0.85em 0;
+        }
+        p:last-child {
+            margin: 0;
+        }
+
+        /**SMALL MOBILE**/
+        @media (max-width: 469.98px) {
+            display: none;
+        }
+	}
+
+	&__burger {
+		justify-self: end;
+        
+        @media (min-width: 767.98px) {
+            display: none;
+        }
+	}
+}
+
+/****** INDEX PAGE: PARALLAX SECTION ******/
+.parallax {
+	background: url('../img/main.jpg') 0 0/cover no-repeat fixed;
+
+	&__content {
+		position: relative;
+        max-width: 90vw;
+        margin: 0 auto;
+		&::before {
+			content: '';
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 50%;
+			height: 125vh;
+			background-color: #5ab2cf;
+			opacity: 0.25;
+			z-index: 1;
+			/**MOBILE**/
+			@media (max-width: 767.98px) {
+				height: 125vw;
+				left: 0%;
+				width: 100%;
+			}  
+		}
+	}
+
+	&__body {
+		display: flex;
+        align-items: center;
+	}
+
+	&__title {
+		flex: 0 1 50%;
+        z-index: 2;
+        padding: 0 10px;
+
+        /**MOBILE**/
+        @media (max-width: 767.98px) {
+            text-align: center;
+            flex: 1 1 auto;
+            margin: 50% 0 0 0;
+        } 
+	}
+
+	&__logo-wrap {
+		flex: 0 1 50%;
+        height: 125vh;
+        width: 100%;
+
+        /**MOBILE**/
+        @media (max-width: 767.98px) {
+            display: none;
+        } 
+	}
+
+	&__logo {
+		position: relative;
+        top: 50%;
+        transform: translate(0, -50%);
+        padding: 0 0 40% 0;
+
+        img {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+	}
 }

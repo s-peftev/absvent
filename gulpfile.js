@@ -1,7 +1,7 @@
 // Gulp
 import gulp from 'gulp';
 // Project paths
-import path from './gulp/config/path.js'
+import path from './gulp/config/path.js';
 // Common plugins import
 import plugins from './gulp/config/plugins.js';
 // Tasks import
@@ -14,26 +14,26 @@ import images from './gulp/tasks/images.js';
 import server from './gulp/tasks/server.js';
 import { otfToTtf, ttfToWoff, fontsStyle } from './gulp/tasks/fonts.js';
 import svgSprite from './gulp/tasks/svg-sprite.js';
-import zip from "./gulp/tasks/zip.js";
-import ftp from "./gulp/tasks/ftp.js";
+import zip from './gulp/tasks/zip.js';
+import ftp from './gulp/tasks/ftp.js';
 
-// Global access for tasks
+// Export gulp app for tasks
 global.app = {
-    isBuild: process.argv.includes('--build'),
-	isDev: !process.argv.includes('--build'),
-    path: path,
-    gulp: gulp,
-    plugins: plugins,
-}
+  isBuild: process.argv.includes('--build'),
+  isDev: !process.argv.includes('--build'),
+  path,
+  gulp,
+  plugins,
+};
 
 // Watch changes in files
 const watcher = () => {
-    gulp.watch(path.watch.files, copy);
-    gulp.watch(path.watch.html, html);
-    gulp.watch(path.watch.scss, scss);
-    gulp.watch(path.watch.js, js);
-    gulp.watch(path.watch.images, images);
-}
+  gulp.watch(path.watch.files, copy);
+  gulp.watch(path.watch.html, html);
+  gulp.watch(path.watch.scss, scss);
+  gulp.watch(path.watch.js, js);
+  gulp.watch(path.watch.images, images);
+};
 
 // Gulp scenarios
 const fonts = gulp.series(otfToTtf, ttfToWoff, fontsStyle);
@@ -46,6 +46,7 @@ const deployFTP = gulp.series(reset, mainTasks, ftp);
 // Default scenario
 gulp.task('default', develop);
 
-
 // Scenarios export
-export { svgSprite, develop, build, deployZIP, deployFTP };
+export {
+  svgSprite, develop, build, deployZIP, deployFTP,
+};
