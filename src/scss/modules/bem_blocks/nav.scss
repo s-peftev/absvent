@@ -33,7 +33,9 @@
 
         /**MOBILE**/
 		@media (max-width: 767.98px) {
+            flex: 1 1 auto;
             flex-direction: column;
+            justify-content: flex-start;
         }
     }
 
@@ -56,7 +58,14 @@
             padding: 0 1%;
             margin: 10% 0 0 0;
             height: auto;
+
+            @media (orientation: landscape) {
+                margin: 2% 0 0 0;
+                font-size: 1.2rem;
+            }
         }
+
+
     }
 
     &__title {
@@ -78,6 +87,10 @@
                 color: $dark_text_color;
                 transition: none;
                 cursor: default;
+            }
+
+            @media (orientation: landscape) {
+                padding: 1% 16px;
             }
         }
     }
@@ -118,6 +131,9 @@
                 transform: translate(-2%, 0);
                 transition: all 0.5s;
                 cursor: pointer;
+            }
+            @media (orientation: landscape) {
+                padding: 1% 16px;
             }
         }
     }
