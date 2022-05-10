@@ -21,7 +21,6 @@
         background-color: #5ab2cf;
         z-index: 5;
         transform: translateY(-9999px);
-        
     }
     &__lang {
         flex: 0 0 75px;
@@ -124,7 +123,10 @@
     }
 
     &_burger-active {
-        transform: translateY(0);
-        transition: transform 0.4s;
+        /**MOBILE**/
+		@media (max-width: 767.98px) {
+            transform: translateY(0);
+            transition: transform 0.4s;
+        }
     }
 }
