@@ -29,29 +29,14 @@ const changeLanguage = (i18next, local) => {
     });
 };
 
-const burgerMenuToggle = (burgerMenuState) => {
-  const header = document.querySelector('.header__container');
-  const contacts = document.querySelector('.header__contacts');
-  const nav = document.querySelector('.nav');
+const burgerMenuToggle = () => {
+  const body = document.querySelector('body');
+  const menu = document.querySelector('.header__menu');
   const burger = document.querySelector('.burger');
-  const langToggle = document.querySelector('.lang');
 
-  nav.classList.toggle('header__nav');
-  nav.classList.toggle('nav_burger-active');
-  langToggle.classList.toggle('header__lang');
-  langToggle.classList.toggle('nav__lang');
+  body.classList.toggle('body_lock');
+  menu.classList.toggle('header__menu_active');
   burger.classList.toggle('burger_active');
-
-  switch (burgerMenuState) {
-    case 'active':
-      nav.prepend(langToggle);
-      break;
-    case 'inactive':
-      header.insertBefore(langToggle, contacts);
-      break;
-    default:
-      break;
-  }
 };
 
 export default (i18next) => (path, value) => {
@@ -61,7 +46,7 @@ export default (i18next) => (path, value) => {
       break;
 
     case 'burgerMenu':
-      burgerMenuToggle(value);
+      burgerMenuToggle();
       break;
 
     case 'local':

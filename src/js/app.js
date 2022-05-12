@@ -22,7 +22,7 @@ export default (i18next) => {
     state.local = state.local === 'uk' ? 'en' : 'uk';
   });
 
-  document.querySelector('.burger').addEventListener('click', () => {
+  document.querySelector('.header__burger').addEventListener('click', () => {
     state.burgerMenu = state.burgerMenu === 'active' ? 'inactive' : 'active';
   });
 };
