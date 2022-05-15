@@ -1,0 +1,23 @@
+.splide {
+
+    &__track {
+    }
+
+    &__list {
+    }
+
+    &__slide {
+        position: relative;
+        padding: 0 0 100px 0;
+
+        img {
+            position: absolute;
+            display: block;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+        }
+    }
+}
