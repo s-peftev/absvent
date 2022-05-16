@@ -6,6 +6,7 @@
 @import './modules/bem_blocks/burger.scss';
 @import './modules/bem_blocks/lang.scss';
 @import './modules/bem_blocks/splide.scss';
+@import './modules/bem_blocks/schema.scss';
 
 @import "../../node_modules/@splidejs/splide/src/css/core/";
 
@@ -54,6 +55,23 @@ body {
 
 .main {
     max-width: 100%;
+}
+
+.section-center {
+    padding: 1em;
+    text-align: center;
+    p {
+        margin: 0 0 1.2em 0;
+        
+        &:last-child {
+            margin: 0;
+        }
+    }
+
+    // MOBILE
+    @media (max-width: 767.98px) {
+        text-align: left;
+    }
 }
 
 /****** HEADER ******/
@@ -255,19 +273,6 @@ body {
 	}
 }
 
-/****** INDEX PAGE: ABOUT SECTION ******/
-.about {
-    padding: 1em;
-    text-align: center;
-    p {
-        margin: 0 0 1.2em 0;
-        
-        &:last-child {
-            margin: 0;
-        }
-    }
-}
-
 /****** INDEX PAGE: ADVANTAGES SECTION ******/
 .advantages {
 
@@ -323,5 +328,46 @@ body {
     // MOBILE
     @media (max-width: 767.98px) {
         display: none;
+    }
+}
+
+/****** INDEX PAGE: SCHEMAS SECTION ******/
+.schemas {
+
+    &__title {
+    }
+
+    &__body {
+        display: flex;
+        flex-direction: column;
+        gap: 2em;
+
+        // TABLET
+        @media (max-width: 991.98px) {
+            gap: 1em;
+        }
+    }
+
+    &__item {
+        height: 550px;
+
+        &_wall {
+            background: url('../img/schemas_bg/wall.jpg') 0 0/cover no-repeat fixed;
+
+        }
+
+        &_duct {
+            background: url('../img/schemas_bg/duct.jpg') 0 0/cover no-repeat fixed;
+        }
+
+        &_central {
+            background: url('../img/schemas_bg/central.jpg') 0 0/cover no-repeat fixed;
+        }
+
+        // TABLET
+        @media (max-width: 991.98px) {
+            background: none;
+            height: auto;
+        }
     }
 }
