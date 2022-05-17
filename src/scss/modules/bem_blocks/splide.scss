@@ -1,11 +1,5 @@
 .splide {
 
-    &__track {
-    }
-
-    &__list {
-    }
-
     &__slide {
         position: relative;
         padding: 0 0 100px 0;
@@ -18,6 +12,18 @@
             width: 100%;
             height: 100%;
             object-fit: contain;
+        }
+    }
+
+    &_big {
+        .splide {
+            &__slide {
+                padding: 0 0 450px 0;
+
+                img {
+                    object-fit: cover;
+                }
+            }
         }
     }
 }

@@ -87,7 +87,27 @@ export default {
           name: 'Станіслав',
           position: 'Директор',
         },
+        item_2: {
+          name: 'Лариса',
+          position: 'Комерційний директор',
+        },
+        item_3: {
+          name: 'Володимир',
+          position: 'Керівник проектного відділу',
+        },
+        item_4: {
+          name: 'Костянтин',
+          position: 'Керівник монтажного відділу',
+        },
       },
+      'portfolio-slider': {
+        title: 'Наші роботи',
+      },
+    },
+    footer: {
+      contact_1: '+38 (067) 538-23-35',
+      contact_2: '+38 (068) 143-25-65',
+      email: 'abs.engineering.project@gmail.com',
     },
   },
 };

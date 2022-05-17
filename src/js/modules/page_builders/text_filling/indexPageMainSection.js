@@ -73,4 +73,32 @@ export default (i18next) => {
     .textContent = i18next.t('main.schemas.schema_3.name.end');
   document.querySelector('[data-text="schema_3_description"]')
     .textContent = i18next.t('main.schemas.schema_3.description');
+
+  // Our team section
+  document.querySelector('[data-text="team_title"]')
+    .textContent = i18next.t('main.team.title');
+
+  document.querySelector('[data-text="team_item_1_name"]')
+    .textContent = i18next.t('main.team.item_1.name');
+  document.querySelector('[data-text="team_item_1_position"]')
+    .textContent = i18next.t('main.team.item_1.position');
+
+  document.querySelector('[data-text="team_item_2_name"]')
+    .textContent = i18next.t('main.team.item_2.name');
+  document.querySelector('[data-text="team_item_2_position"]')
+    .textContent = i18next.t('main.team.item_2.position');
+
+  document.querySelector('[data-text="team_item_3_name"]')
+    .textContent = i18next.t('main.team.item_3.name');
+  document.querySelector('[data-text="team_item_3_position"]')
+    .textContent = i18next.t('main.team.item_3.position');
+
+  document.querySelector('[data-text="team_item_4_name"]')
+    .textContent = i18next.t('main.team.item_4.name');
+  document.querySelector('[data-text="team_item_4_position"]')
+    .textContent = i18next.t('main.team.item_4.position');
+
+  // Portfolio section
+  document.querySelector('[data-text="portfolio-slider_title"]')
+    .textContent = i18next.t('main.portfolio-slider.title');
 };

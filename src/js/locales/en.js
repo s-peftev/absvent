@@ -81,6 +81,28 @@ export default {
           description: 'The air conditioning scheme of the centralized system together with ventilation provides a high level of comfortable climatic conditions, and all internal equipment can be placed within one non-residential premises, at the entrance to the house, which simplifies further maintenance.',
         },
       },
+      team: {
+        title: 'Our team',
+        item_1: {
+          name: 'Stanislav',
+          position: 'Director',
+        },
+        item_2: {
+          name: 'Larysa',
+          position: 'Commercial Director',
+        },
+        item_3: {
+          name: 'Volodymyr',
+          position: 'Head of the project department',
+        },
+        item_4: {
+          name: 'Kostiantyn',
+          position: 'Head of installation department',
+        },
+      },
+      'portfolio-slider': {
+        title: 'Our works',
+      },
     },
   },
 };
