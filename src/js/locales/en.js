@@ -20,88 +20,95 @@ export default {
         },
       },
     },
-    parallax: {
-      title: 'Comprehensive solutions for air conditioning, air heating and ventilation of apartments and houses',
+    footer: {
+      contact_1: '+38 (067) 538-23-35',
+      contact_2: '+38 (068) 143-25-65',
+      email: 'abs.engineering.project@gmail.com',
     },
-    main: {
-      about: {
-        p_1: 'Absolut Engineering Project specializes in the implementation of engineering climate systems for restaurants, offices, sports facilities, industrial premises, hospitals and others.',
-        p_2: 'In addition, one of the priorities of our company is a comprehensive solution for air conditioning, air heating and ventilation of apartments and houses of any complexity: from conventional split systems to centralized systems with comfort zones, humidification and fine air purification.',
-        p_3: 'The presence of air conditioning and ventilation systems in your own apartment or house is a mandatory component of comfortable living conditions. But mistakes made at the design stage of these systems in the future can bring the homeowner more problems than comfort.',
+    index_page: {
+      parallax: {
+        title: 'Comprehensive solutions for air conditioning, air heating and ventilation of apartments and houses',
       },
-      advantages: {
-        title: 'Why you should choose us',
-        item_1: {
-          name: 'Versality',
-          description: 'We implement any systems of air conditioning, air heating, ventilation, humidification and air purification for apartments and residential buildings',
+      main: {
+        about: {
+          p_1: 'Absolut Engineering Project specializes in the implementation of engineering climate systems for restaurants, offices, sports facilities, industrial premises, hospitals and others.',
+          p_2: 'In addition, one of the priorities of our company is a comprehensive solution for air conditioning, air heating and ventilation of apartments and houses of any complexity: from conventional split systems to centralized systems with comfort zones, humidification and fine air purification.',
+          p_3: 'The presence of air conditioning and ventilation systems in your own apartment or house is a mandatory component of comfortable living conditions. But mistakes made at the design stage of these systems in the future can bring the homeowner more problems than comfort.',
         },
-        item_2: {
-          name: 'Flexibility',
-          description: 'We develop equipment for air conditioning, air heating and ventilation systems individually for each project, and we produce it at the production facilities of partners, from European components',
-        },
-        item_3: {
-          name: 'Convenience',
-          description: 'Really individual approach at development of climatic systems on each object, gives the chance to realize as much as possible the ideas to designers and architects, without loss of quality of comfort of climatic conditions for the customer',
-        },
-        item_4: {
-          name: 'Experience',
-          description: 'For more than 10 years we have been successfully implementing projects in Kyiv and Ukraine in general, in Germany and other European countries.',
-        },
-      },
-      'order-info': {
-        title: 'How do we work',
-        p_1: 'You can order from us realization of system of conditioning, air heating, ventilation in a complex: we will develop for you the scheme of work of systems, we will select the equipment from leading brands, or, if necessary, we will develop the individual equipment especially for you, we will carry out installation and commissioning, and in the future we can provide you with service.',
-        p_2: 'On our site you can get acquainted with the main types of air conditioning, air heating and ventilation systems for apartments and houses.',
-      },
-      schemas: {
-        title: 'Basic schemes of complex solutions',
-        btn: 'Read more',
-        schema_1: {
-          name: {
-            start: 'Conditioning',
-            middle: 'with wall-type split systems',
-            end: 'and ventilation',
+        advantages: {
+          title: 'Why you should choose us',
+          item_1: {
+            name: 'Versality',
+            description: 'We implement any systems of air conditioning, air heating, ventilation, humidification and air purification for apartments and residential buildings',
           },
-          description: 'Air-conditioning with wall-mounted split systems together with ventilation satisfies the basic needs of maintaining climatic conditions. Indoor units are located on the walls of each of the rooms in which you want to adjust the temperature.',
-        },
-        schema_2: {
-          name: {
-            start: 'Conditioning',
-            middle: 'with duct-type split systems',
-            end: 'and ventilation',
+          item_2: {
+            name: 'Flexibility',
+            description: 'We develop equipment for air conditioning, air heating and ventilation systems individually for each project, and we produce it at the production facilities of partners, from European components',
           },
-          description: 'Air conditioning of duct-type split systems together with ventilation copes well with maintaining comfortable conditions. Indoor units are installed one for each of the rooms in which you want to adjust the temperature, usually in the ceiling space of adjacent non-residential premises.',
-        },
-        schema_3: {
-          name: {
-            start: 'Conditioning and air heating',
-            middle: 'with centralized system',
-            end: 'and ventilation',
+          item_3: {
+            name: 'Convenience',
+            description: 'Really individual approach at development of climatic systems on each object, gives the chance to realize as much as possible the ideas to designers and architects, without loss of quality of comfort of climatic conditions for the customer',
           },
-          description: 'The air conditioning scheme of the centralized system together with ventilation provides a high level of comfortable climatic conditions, and all internal equipment can be placed within one non-residential premises, at the entrance to the house, which simplifies further maintenance.',
+          item_4: {
+            name: 'Experience',
+            description: 'For more than 10 years we have been successfully implementing projects in Kyiv and Ukraine in general, in Germany and other European countries.',
+          },
         },
-      },
-      team: {
-        title: 'Our team',
-        item_1: {
-          name: 'Stanislav',
-          position: 'Director',
+        'order-info': {
+          title: 'How do we work',
+          p_1: 'You can order from us realization of system of conditioning, air heating, ventilation in a complex: we will develop for you the scheme of work of systems, we will select the equipment from leading brands, or, if necessary, we will develop the individual equipment especially for you, we will carry out installation and commissioning, and in the future we can provide you with service.',
+          p_2: 'On our site you can get acquainted with the main types of air conditioning, air heating and ventilation systems for apartments and houses.',
         },
-        item_2: {
-          name: 'Larysa',
-          position: 'Commercial Director',
+        schemas: {
+          title: 'Basic schemes of complex solutions',
+          btn: 'Read more',
+          schema_1: {
+            name: {
+              start: 'Conditioning',
+              middle: 'with wall-type split systems',
+              end: 'and ventilation',
+            },
+            description: 'Air-conditioning with wall-mounted split systems together with ventilation satisfies the basic needs of maintaining climatic conditions. Indoor units are located on the walls of each of the rooms in which you want to adjust the temperature.',
+          },
+          schema_2: {
+            name: {
+              start: 'Conditioning',
+              middle: 'with duct-type split systems',
+              end: 'and ventilation',
+            },
+            description: 'Air conditioning of duct-type split systems together with ventilation copes well with maintaining comfortable conditions. Indoor units are installed one for each of the rooms in which you want to adjust the temperature, usually in the ceiling space of adjacent non-residential premises.',
+          },
+          schema_3: {
+            name: {
+              start: 'Conditioning and air heating',
+              middle: 'with centralized system',
+              end: 'and ventilation',
+            },
+            description: 'The air conditioning scheme of the centralized system together with ventilation provides a high level of comfortable climatic conditions, and all internal equipment can be placed within one non-residential premises, at the entrance to the house, which simplifies further maintenance.',
+          },
         },
-        item_3: {
-          name: 'Volodymyr',
-          position: 'Head of the project department',
+        team: {
+          title: 'Our team',
+          item_1: {
+            name: 'Stanislav',
+            position: 'Director',
+          },
+          item_2: {
+            name: 'Larysa',
+            position: 'Commercial Director',
+          },
+          item_3: {
+            name: 'Volodymyr',
+            position: 'Head of the project department',
+          },
+          item_4: {
+            name: 'Kostiantyn',
+            position: 'Head of installation department',
+          },
         },
-        item_4: {
-          name: 'Kostiantyn',
-          position: 'Head of installation department',
+        'portfolio-slider': {
+          title: 'Our works',
         },
-      },
-      'portfolio-slider': {
-        title: 'Our works',
       },
     },
   },

@@ -9,7 +9,7 @@ export default (i18next) => {
   textifyFooter(i18next);
 
   document.querySelector('[data-text="parallax_title"]')
-    .textContent = i18next.t('parallax.title');
+    .textContent = i18next.t('index_page.parallax.title');
 
   textifyMain(i18next);
 

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="uk">
+    @@include('./html_modules/head.html', {
+        title: 'AEP',
+    })
+    <body>
+        <div class="wrapper">
+            @@include('./html_modules/header.html')
+            <main class="main">
+                <article class="system">
+                    <div class="system__container">
+                        <h1 class="system__name" data-text="wall_type_name"></h1>
+                        <div class="system__drawing">
+                            <img src="./img/systems_drawings/wall_type_drawing.png" alt="Схема організації системи кондиціонування спліт-системами настінного типу та вентиляції">
+                        </div>
+                        <div class="system__description">
+                            <p class="system__text" data-text="wall_type_description_p_1"></p>
+                            <h2 class="system__title" data-text="wall_type_description_title_1"></h2>
+                            <p class="system__text" data-text="wall_type_description_p_2"></p>
+                            <p class="system__text" data-text="wall_type_description_p_3"></p>
+                            <div class="system__row">
+                                <div class="system_float">
+                                    <h3 class="system__subtitle" data-text="wall_type_description_subtitle_1"></h3>
+                                    <p class="system__text system__text_indent" data-text="wall_type_description_p_4"></p>
+                                    <p class="system__text system__text_indent" data-text="wall_type_description_p_5"></p>
+                                    <p class="system__text system__text_indent" data-text="wall_type_description_p_6"></p>
+                                    <h3 class="system__subtitle" data-text="wall_type_description_subtitle_2"></h3>
+                                    <p class="system__text system__text_indent" data-text="wall_type_description_p_7"></p>
+                                    <p class="system__text system__text_indent" data-text="wall_type_description_p_8"></p>
+                                    <p class="system__text system__text_indent" data-text="wall_type_description_p_9"></p>
+                                </div>
+                                <div class="system__picture">
+                                    <img src="./img/systems_components/wall_type_split.jpg" alt="Спліт система настінного типу">
+                                </div>
+                            </div>
+                            <p class="system__text" data-text="wall_type_description_p_10"></p>
+                            <h2 class="system__title" data-text="wall_type_description_title_2"></h2>
+                            <h3 class="system__subtitle" data-text="wall_type_description_subtitle_3"></h3>
+                            <p class="system__text" data-text="wall_type_description_p_11"></p>
+                            <div class="system__row system__row_reversed">
+                                <div class="system__float">
+                                    <p class="system__text" data-text="wall_type_description_p_12"></p>
+                                    <p class="system__text" data-text="wall_type_description_p_13"></p>
+                                    <p class="system__text" data-text="wall_type_description_p_14"></p>
+                                </div>
+                                <div class="system__picture">
+                                    <img src="./img/systems_components/maico.jpg" alt="Побутовий вентилятор">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+            </main>
+            @@include('./html_modules/footer.html')
+        </div>
+    </body>
+</html>
