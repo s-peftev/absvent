@@ -46,10 +46,10 @@ body {
     min-height: 100%;
     overflow: hidden;
     display: grid;
-    grid-template: 125vh 1fr minmax(auto, 120px) / 100%;
+    grid-template: 125vh 1fr auto / 100%;
     /**MOBILE**/
 	@media (max-width: 767.98px) {
-		grid-template: 125vw 1fr minmax(auto, 120px) / 100%;
+		grid-template: 125vw 1fr auto / 100%;
 	}
 }
 
@@ -195,14 +195,21 @@ body {
 /****** FOOTER ******/
 .footer {
 
+
     &__container {
         display: flex;
         justify-content: space-between;
         align-items: center;
+        flex-wrap: wrap;
+        padding: 0.5em 1em;
     }
 
     &__contacts {
         font-size: 0.8rem;
+        
+        p {
+            margin: 8px;
+        }
     }
 
     &__social {
@@ -210,11 +217,12 @@ body {
     }
 
     &__btn {
-        width: 50px;
-        height: 50px;
-        margin: 0 10px;
+        width: 30px;
+        height: 30px;
+        margin: 15px 30px 15px 0;
         cursor: pointer;
         transition: all 0.4s;
+        
 
         &:hover{
             transform: scale(1.1);
