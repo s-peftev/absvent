@@ -14,6 +14,8 @@ export default (i18next) => {
     .textContent = i18next.t('wall_type.description.subtitle_2');
   document.querySelector('[data-text="wall_type_description_subtitle_3"]')
     .textContent = i18next.t('wall_type.description.subtitle_3');
+  document.querySelector('[data-text="wall_type_description_subtitle_4"]')
+    .textContent = i18next.t('wall_type.description.subtitle_4');
 
   document.querySelector('[data-text="wall_type_description_p_1"]')
     .textContent = i18next.t('wall_type.description.p_1');
@@ -43,4 +45,12 @@ export default (i18next) => {
     .textContent = i18next.t('wall_type.description.p_13');
   document.querySelector('[data-text="wall_type_description_p_14"]')
     .textContent = i18next.t('wall_type.description.p_14');
+  document.querySelector('[data-text="wall_type_description_p_15"]')
+    .textContent = i18next.t('wall_type.description.p_15');
+  document.querySelector('[data-text="wall_type_description_p_16"]')
+    .textContent = i18next.t('wall_type.description.p_16');
+  document.querySelector('[data-text="wall_type_description_p_17"]')
+    .textContent = i18next.t('wall_type.description.p_17');
+  document.querySelector('[data-text="wall_type_description_p_18"]')
+    .textContent = i18next.t('wall_type.description.p_18');
 };
