@@ -494,9 +494,6 @@ body {
 .system {
     margin: 10px 0 0 0;
 
-    &__container {
-    }
-
     &__row {
         display: flex;
         align-items: center;
@@ -529,9 +526,6 @@ body {
             height: 100%;
             object-fit: contain;
         }
-    }
-
-    &__description {
     }
 
     &__text {

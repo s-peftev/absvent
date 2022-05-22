@@ -1,9 +1,11 @@
 import buildIndexPage from './page_builders/buildIndexPage.js';
 import buildWallTypePage from './page_builders/buildWallTypePage.js';
+import buildDuctTypePage from './page_builders/buildDuctTypePage.js';
 
 const ROUTER = {
   '/': (i18next) => buildIndexPage(i18next),
   '/wall-type.html': (i18next) => buildWallTypePage(i18next),
+  '/duct-type.html': (i18next) => buildDuctTypePage(i18next),
 };
 
 const resolveRoute = (route) => {
