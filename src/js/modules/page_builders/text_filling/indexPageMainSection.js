@@ -27,7 +27,7 @@ export default (i18next) => {
     .textContent = i18next.t('index_page.main.advantages.item_3.description');
 
   document.querySelector('[data-text="advantages_item_4_name"]')
-    .textContent = i18next.t('main.advantages.item_4.name');
+    .textContent = i18next.t('index_page.main.advantages.item_4.name');
   document.querySelector('[data-text="advantages_item_4_description"]')
     .textContent = i18next.t('index_page.main.advantages.item_4.description');
 

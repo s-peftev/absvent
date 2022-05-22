@@ -4,6 +4,8 @@ export default (i18next) => {
 
   document.querySelector('[data-text="duct_type_description_title_1"]')
     .textContent = i18next.t('duct_type.description.title_1');
+  document.querySelector('[data-text="duct_type_description_title_2"]')
+    .textContent = i18next.t('duct_type.description.title_2');
 
   document.querySelector('[data-text="duct_type_conclusion_title_1"]')
     .textContent = i18next.t('duct_type.conclusion.title_1');
