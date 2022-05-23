@@ -3,6 +3,8 @@ import buildWallTypePage from './page_builders/buildWallTypePage.js';
 import buildDuctTypePage from './page_builders/buildDuctTypePage.js';
 import buildCentralizedTypePage from './page_builders/buildCentralizedTypePage.js';
 import buildExamplePage from './page_builders/buildExamplePage.js';
+import buildObjectsHomePage from './page_builders/buildObjectsHomePage.js';
+import buildObjectsOtherPage from './page_builders/buildObjectsOtherPage.js';
 
 const ROUTER = {
   '/': (i18next) => buildIndexPage(i18next),
@@ -10,6 +12,8 @@ const ROUTER = {
   '/duct-type.html': (i18next) => buildDuctTypePage(i18next),
   '/centralized-type.html': (i18next) => buildCentralizedTypePage(i18next),
   '/example.html': (i18next) => buildExamplePage(i18next),
+  '/objects-home.html': (i18next) => buildObjectsHomePage(i18next),
+  '/objects-other.html': (i18next) => buildObjectsOtherPage(i18next),
 };
 
 const resolveRoute = (route) => {
