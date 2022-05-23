@@ -391,23 +391,33 @@ body {
     &__item {
         height: 550px;
 
+
+
+        &_wall {
+            background: url('../img/schemas_bg/wall.jpg') 0 0/cover no-repeat fixed;
         // TABLET
         @media (max-width: 991.98px) {
             background: none;
             height: auto;
         }
-
-        &_wall {
-            background: url('../img/schemas_bg/wall.jpg') 0 0/cover no-repeat fixed;
-
         }
 
         &_duct {
             background: url('../img/schemas_bg/duct.jpg') 0 0/cover no-repeat fixed;
+                    // TABLET
+        @media (max-width: 991.98px) {
+            background: none;
+            height: auto;
+        }
         }
 
         &_central {
             background: url('../img/schemas_bg/central.jpg') 0 0/cover no-repeat fixed;
+                    // TABLET
+        @media (max-width: 991.98px) {
+            background: none;
+            height: auto;
+        }
         }
     }
 }
