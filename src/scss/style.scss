@@ -641,6 +641,11 @@ body {
     &__label {
         font-weight: 700;
         color: $dark_text_color;
-        padding: 6px 12px 12px 12px;
+        padding: 0.3em 0.6em 0.6em 0.6em;
+
+        // MOBILE
+        @media (max-width: 767.98px) {
+            font-size: 0.7rem;
+        }
     }
 }

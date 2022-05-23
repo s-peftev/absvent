@@ -303,5 +303,27 @@ export default {
       li_3: 'easy to operate, which is serviced only in two non-residential premises (wardrobe and laundry) without the need for service workers in other rooms.',
       li_4: 'during operation, if necessary, it is possible to complete the system with a humidifier to maintain relative humidity in the room.',
     },
+    objects: {
+      title: 'Some of our projects:',
+      home: {
+        label_1: 'Private two-level apartment in the residential complex Pokrovsky Posad in Kyiv.',
+        label_2: 'Private apartment in the residential complex PecherSKY in Kyiv.',
+        label_3: 'Private two-storey house in Germany.',
+        label_4: 'Centralized air conditioning and ventilation system for a two-storey private house in Germany',
+        label_5: 'Centralized air conditioning and ventilation system for a two-storey private house in the suburbs of Kyiv',
+        label_6: 'Centralized air conditioning and ventilation system for a two-storey private house in Germany',
+        label_7: 'Centralized air conditioning and ventilation system for a two-storey private house in Germany',
+      },
+      other: {
+        label_1: 'Coworking iHUB on the street. Khreshchatyk in Kyiv: spacious open space, private offices, meeting rooms, recreation areas and event halls',
+        label_2: 'Ventilation for one of the plants of the German manufacturer Krupp, Germany',
+        label_3: 'China Ma Chinese Restaurant, Kyiv',
+        label_4: 'Author`s cuisine restaurant Yoshi Fujiwara, in the center of "Novopecherskie Lipki", Kyiv',
+        label_5: 'Restaurant 3B REPUBLIC, Kyiv',
+        label_6: 'Bro Market restaurant in Arena City on the street. Khreshchatyk, Kyiv',
+        label_7: 'Japanese cuisine restaurant Torisho, Kyiv',
+        label_8: 'Ventilation systems for the production of the Ukrainian dairy company "Lustdorf", Illintsi',
+      },
+    },
   },
 };
