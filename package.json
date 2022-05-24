@@ -59,6 +59,7 @@
   "dependencies": {
     "@splidejs/splide": "^4.0.2",
     "i18next": "^21.8.0",
+    "js-cookie": "^3.0.1",
     "on-change": "^4.0.0"
   }
 }

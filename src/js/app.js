@@ -1,25 +1,25 @@
+import Cookies from 'js-cookie';
 import onChange from 'on-change';
 import render from './modules/render.js';
 
-export default (i18next) => {
+export default (i18next, lang = 'uk') => {
   const state = onChange({
-    route: '',
     burgerMenu: 'inactive',
-    local: 'uk',
+    local: '',
   }, render(i18next));
 
   window.addEventListener('load', () => {
-    const url = new URL(window.location);
-    state.route = url.pathname;
+    state.local = lang;
   });
 
   window.addEventListener('hashchange', () => {
-    const url = new URL(window.location);
-    state.route = url.pathname;
+    state.local = lang;
   });
 
   document.querySelector('.header__lang').addEventListener('click', () => {
     state.local = state.local === 'uk' ? 'en' : 'uk';
+    Cookies.remove('language');
+    Cookies.set('language', state.local, { expires: 7, secure: true, sameSite: 'Lax' });
   });
 
   document.querySelector('.header__burger').addEventListener('click', () => {

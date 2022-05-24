@@ -32,10 +32,22 @@ const renderPage = (i18next, route) => {
 const changeLanguage = (i18next, local) => {
   i18next.changeLanguage(local)
     .then(() => {
-      document.querySelector('.lang__flag')
-        .classList.toggle('lang__flag_en');
-      document.querySelector('.lang__toggle')
-        .classList.toggle('lang__toggle_en');
+      switch (local) {
+        case 'uk':
+          document.querySelector('.lang__flag')
+            .classList.remove('lang__flag_en');
+          document.querySelector('.lang__toggle')
+            .classList.remove('lang__toggle_en');
+          break;
+        case 'en':
+          document.querySelector('.lang__flag')
+            .classList.add('lang__flag_en');
+          document.querySelector('.lang__toggle')
+            .classList.add('lang__toggle_en');
+          break;
+        default:
+          break;
+      }
       const url = new URL(window.location);
       renderPage(i18next, url.pathname);
     });

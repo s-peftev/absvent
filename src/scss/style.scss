@@ -329,7 +329,6 @@ body {
         column-gap: 0.8em;
         row-gap: 2em;
         grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-        // grid-auto-rows: 1fr;
 
         // PC
         @media (max-width: 1140px) {
