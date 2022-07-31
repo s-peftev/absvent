@@ -19,7 +19,7 @@ export default (i18next, lang = 'uk') => {
   document.querySelector('.header__lang').addEventListener('click', () => {
     state.local = state.local === 'uk' ? 'en' : 'uk';
     Cookies.remove('language');
-    Cookies.set('language', state.local, { expires: 7, secure: true, sameSite: 'Lax' });
+    Cookies.set('language', state.local, { expires: 7, secure: false, sameSite: 'Lax' });
   });
 
   document.querySelector('.header__burger').addEventListener('click', () => {

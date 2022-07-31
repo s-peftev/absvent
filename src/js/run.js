@@ -11,7 +11,7 @@ export default () => {
     lang = Cookies.get('language');
   } else {
     lang = 'uk';
-    Cookies.set('language', 'uk', { expires: 7, secure: true, sameSite: 'Lax' });
+    Cookies.set('language', 'uk', { expires: 7, secure: false, sameSite: 'Lax' });
   }
 
   i18nextInstance

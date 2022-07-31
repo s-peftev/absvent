@@ -65,10 +65,6 @@ const burgerMenuToggle = () => {
 
 export default (i18next) => (path, value) => {
   switch (path) {
-    case 'route':
-      renderPage(i18next, value);
-      break;
-
     case 'burgerMenu':
       burgerMenuToggle();
       break;

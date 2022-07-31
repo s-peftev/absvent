@@ -1,17 +1,11 @@
 import Splide from '@splidejs/splide';
-import textifyHeader from './text_filling/header.js';
-import textifyFooter from './text_filling/footer.js';
-import textifyMain from './text_filling/indexPageMainSection.js';
+import fillText from '../fillText.js';
 
 export default (i18next) => {
   // Page text filling
-  textifyHeader(i18next);
-  textifyFooter(i18next);
-
-  document.querySelector('[data-text="parallax_title"]')
-    .textContent = i18next.t('index_page.parallax.title');
-
-  textifyMain(i18next);
+  fillText('header', i18next);
+  fillText('index', i18next);
+  fillText('footer', i18next);
 
   // Sliders
   new Splide('.logo-slider', {
