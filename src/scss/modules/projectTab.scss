@@ -1,0 +1,48 @@
+.project-tab {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 1em;
+
+    &__radio {
+        display: none;
+    }
+
+    &__list {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        gap: 1em;
+    }
+
+    &__label {
+        flex: 0 1 30%;
+        font-size: 0.85rem;
+        padding: 1em 0.8em;
+        border: 1px solid rgb(71, 100, 101);
+        text-align: center;
+        cursor: pointer;
+        transition: all 0.3s;
+
+        &:hover {
+            background-color: rgb(162, 223, 245, 0.4);
+        }
+    }
+
+    &__schema {
+        display: none;
+    }
+}
+
+#central_schema_control:checked ~ #central_schema,
+#wall_schema_control:checked ~ #wall_schema,
+#duct_schema_control:checked ~ #duct_schema {
+    display: block;
+}
+
+#central_schema_control:checked ~ div #central_schema_label,
+#wall_schema_control:checked ~ div #wall_schema_label,
+#duct_schema_control:checked ~ div #duct_schema_label {
+    background-color: rgb(162, 223, 245);
+    border-radius: 15px;
+}

@@ -1,12 +1,16 @@
 @import './nullstyle.scss';
 @import './vars.scss';
 
+@import './modules/projectTypes.scss';
+@import './modules/projectTab.scss';
+@import './modules/schema.scss';
+
 @import './modules/bem_blocks/title.scss';
 @import './modules/bem_blocks/nav.scss';
 @import './modules/bem_blocks/burger.scss';
 @import './modules/bem_blocks/lang.scss';
 @import './modules/bem_blocks/splide.scss';
-@import './modules/bem_blocks/schema.scss';
+// @import './modules/bem_blocks/schema.scss';
 
 @import "../../node_modules/@splidejs/splide/src/css/core/";
 
@@ -23,7 +27,8 @@ body {
 [class*="__container"] {
     max-width: 90%;
     margin: 0 auto;
-	padding: 0 15px;
+	padding-left: 15px;
+    padding-right: 15px;
 	// PC
 	@media (max-width: 1140px) {
 		

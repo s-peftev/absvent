@@ -1,8 +1,9 @@
 <!DOCTYPE html>
 <html lang="uk">
 @@include('./html_modules/head.html', {
-    title: 'AEP',
+title: 'AEP',
 })
+
 <body>
     <div class="wrapper wrapper_index">
         @@include('./html_modules/header.html')
@@ -32,19 +33,23 @@
                     <div class="advantages__body">
                         <div class="advantages__item">
                             <h3 class="advantages__name" data-index-text="main.advantages.item_1.name"></h3>
-                            <div class="advantages__description" data-index-text="main.advantages.item_1.description"></div>
+                            <div class="advantages__description" data-index-text="main.advantages.item_1.description">
+                            </div>
                         </div>
                         <div class="advantages__item">
                             <h3 class="advantages__name" data-index-text="main.advantages.item_2.name"></h3>
-                            <div class="advantages__description" data-index-text="main.advantages.item_2.description"></div>
+                            <div class="advantages__description" data-index-text="main.advantages.item_2.description">
+                            </div>
                         </div>
                         <div class="advantages__item">
                             <h3 class="advantages__name" data-index-text="main.advantages.item_3.name"></h3>
-                            <div class="advantages__description" data-index-text="main.advantages.item_3.description"></div>
+                            <div class="advantages__description" data-index-text="main.advantages.item_3.description">
+                            </div>
                         </div>
                         <div class="advantages__item">
                             <h3 class="advantages__name" data-index-text="main.advantages.item_4.name"></h3>
-                            <div class="advantages__description" data-index-text="main.advantages.item_4.description"></div>
+                            <div class="advantages__description" data-index-text="main.advantages.item_4.description">
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -113,6 +118,100 @@
                     <p data-index-text="main.order-info.p_2"></p>
                 </div>
             </section>
+            <section class="project-types">
+                <div class="project-types__container">
+                    <div class="project-types__switch">
+                        <div class="project-types__switch-item" data-type="home">
+                            <div class="project-types__switch-icon">
+                                <img src="./img/project_types/home.jpg" alt="">
+                            </div>
+                            <div class="project-types__switch-name">Системи для житла</div>
+                        </div>
+                        <div class="project-types__switch-item" data-type="restaurant">
+                            <div class="project-types__switch-icon">
+                                <img src="./img/project_types/restaurant.jpg" alt="">
+                            </div>
+                            <div class="project-types__switch-name">Системи для ресторанів</div>
+                        </div>
+                    </div>
+                    <div class="project-types__tabs">
+                        <input class="project-types__tab-radio" id="home_tab_control" type="radio" name="schemas" />
+                        <input class="project-types__tab-radio" id="restaurant_tab_control" type="radio"
+                            name="schemas" />
+                        <div class="project-types__tab-list">
+                            <label id="home_tab_label" class="project-types__tab-label"
+                                for="home_tab_control">Житло</label>
+                            <label id="restaurant_tab_label" class="project-types__tab-label"
+                                for="restaurant_tab_control">Ресторани</label>
+                        </div>
+                        <section id="home_tab" class="project-types__tab">
+                            <div class="project-tab">
+                                <input class="project-tab__radio" id="central_schema_control" type="radio"
+                                    name="home_schemas" checked />
+                                <input class="project-tab__radio" id="wall_schema_control" type="radio"
+                                    name="home_schemas" />
+                                <input class="project-tab__radio" id="duct_schema_control" type="radio"
+                                    name="home_schemas" />
+                                <div class="project-tab__list">
+                                    <label id="central_schema_label" class="project-tab__label"
+                                        for="central_schema_control">Централізована система</label>
+                                    <label id="wall_schema_label" class="project-tab__label"
+                                        for="wall_schema_control">Система з настінними кондіціонерами</label>
+                                    <label id="duct_schema_label" class="project-tab__label"
+                                        for="duct_schema_control">Система з канальними кондиціонерами</label>
+                                </div>
+                                <section id="central_schema" class="project-tab__schema">
+                                    <div class="schema">
+                                        <div class="schema__plan">
+                                            <img src="./img/project_types/home/central.png"
+                                                alt="Централізована система вентиляції">
+                                        </div>
+                                        <div class="schema__description">
+                                            <p class="schema__text" data-index-text="main.schemas.schema_1.description">
+                                            </p>
+                                            <a href="centralized-type.html">
+                                                <div class="schema__btn" data-index-text="main.schemas.btn"></div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </section>
+                                <section id="wall_schema" class="project-tab__schema">
+                                    <div class="schema">
+                                        <div class="schema__plan">
+                                            <img src="./img/project_types/home/wall_type.png"
+                                                alt="Cистема вентиляції з настінними кондиціонерами">
+                                        </div>
+                                        <div class="schema__description">
+                                            <p class="schema__text" data-index-text="main.schemas.schema_2.description">
+                                            </p>
+                                            <a href="wall-type.html">
+                                                <div class="schema__btn" data-index-text="main.schemas.btn"></div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </section>
+                                <section id="duct_schema" class="project-tab__schema">
+                                    <div class="schema">
+                                        <div class="schema__plan">
+                                            <img src="./img/project_types/home/duct_type.png"
+                                                alt="Cистема вентиляції з канальними кондиціонерами">
+                                        </div>
+                                        <div class="schema__description">
+                                            <p class="schema__text" data-index-text="main.schemas.schema_3.description">
+                                            </p>
+                                            <a href="duct-type.html">
+                                                <div class="schema__btn" data-index-text="main.schemas.btn"></div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </section>
+                            </div>
+                        </section>
+                        <section id="restaurant_tab" class="project-types__tab">Розділ в розробці</section>
+                    </div>
+                </div>
+            </section>
+            <!--
             <section class="schemas">
                 <h2 class="schemas__title title" data-index-text="main.schemas.title"></h2>
                 <div class="schemas__body">
@@ -120,12 +219,17 @@
                         <div class="schema__container">
                             <div class="schema__content">
                                 <div class="schema__name">
-                                    <span class="schema__name_bold" data-index-text="main.schemas.schema_1.name.start"></span>
+                                    <span class="schema__name_bold"
+                                        data-index-text="main.schemas.schema_1.name.start"></span>
                                     <span data-index-text="main.schemas.schema_1.name.middle"></span>
-                                    <span class="schema__name_bold" data-index-text="main.schemas.schema_1.name.end"></span>
+                                    <span class="schema__name_bold"
+                                        data-index-text="main.schemas.schema_1.name.end"></span>
                                 </div>
-                                <div class="schema__description" data-index-text="main.schemas.schema_1.description"></div>
-                                <a href="wall-type.html"><div class="schema__btn" data-index-text="main.schemas.btn"></div></a>
+                                <div class="schema__description" data-index-text="main.schemas.schema_1.description">
+                                </div>
+                                <a href="wall-type.html">
+                                    <div class="schema__btn" data-index-text="main.schemas.btn"></div>
+                                </a>
                             </div>
                         </div>
                     </div>
@@ -133,12 +237,17 @@
                         <div class="schema__container schema__container_left">
                             <div class="schema__content">
                                 <div class="schema__name">
-                                    <span class="schema__name_bold" data-index-text="main.schemas.schema_2.name.start"></span>
+                                    <span class="schema__name_bold"
+                                        data-index-text="main.schemas.schema_2.name.start"></span>
                                     <span data-index-text="main.schemas.schema_2.name.middle"></span>
-                                    <span class="schema__name_bold" data-index-text="main.schemas.schema_2.name.end"></span>
+                                    <span class="schema__name_bold"
+                                        data-index-text="main.schemas.schema_2.name.end"></span>
                                 </div>
-                                <div class="schema__description" data-index-text="main.schemas.schema_2.description"></div>
-                                <a href="duct-type.html"><div class="schema__btn" data-index-text="main.schemas.btn"></div></a>
+                                <div class="schema__description" data-index-text="main.schemas.schema_2.description">
+                                </div>
+                                <a href="duct-type.html">
+                                    <div class="schema__btn" data-index-text="main.schemas.btn"></div>
+                                </a>
                             </div>
                         </div>
                     </div>
@@ -146,17 +255,23 @@
                         <div class="schema__container">
                             <div class="schema__content">
                                 <div class="schema__name">
-                                    <span class="schema__name_bold" data-index-text="main.schemas.schema_3.name.start"></span>
+                                    <span class="schema__name_bold"
+                                        data-index-text="main.schemas.schema_3.name.start"></span>
                                     <span data-index-text="main.schemas.schema_3.name.middle"></span>
-                                    <span class="schema__name_bold" data-index-text="main.schemas.schema_3.name.end"></span>
+                                    <span class="schema__name_bold"
+                                        data-index-text="main.schemas.schema_3.name.end"></span>
                                 </div>
-                                <div class="schema__description" data-index-text="main.schemas.schema_3.description"></div>
-                                <a href="centralized-type.html"><div class="schema__btn" data-index-text="main.schemas.btn"></div></a>
+                                <div class="schema__description" data-index-text="main.schemas.schema_3.description">
+                                </div>
+                                <a href="centralized-type.html">
+                                    <div class="schema__btn" data-index-text="main.schemas.btn"></div>
+                                </a>
                             </div>
                         </div>
                     </div>
                 </div>
             </section>
+        -->
             <section class="team">
                 <div class="team__container">
                     <h2 class="team__title title" data-index-text="main.team.title"></h2>
@@ -230,4 +345,5 @@
         @@include('./html_modules/footer.html')
     </div>
 </body>
+
 </html>

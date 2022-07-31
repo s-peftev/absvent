@@ -57,7 +57,7 @@ export default {
         'order-info': {
           title: 'How do we work',
           p_1: 'You can order from us realization of system of conditioning, air heating, ventilation in a complex: we will develop for you the scheme of work of systems, we will select the equipment from leading brands, or, if necessary, we will develop the individual equipment especially for you, we will carry out installation and commissioning, and in the future we can provide you with service.',
-          p_2: 'On our site you can get acquainted with the main types of air conditioning, air heating and ventilation systems for apartments and houses.',
+          p_2: 'On our site you can get acquainted with the main types of air conditioning, air heating and ventilation systems.',
         },
         schemas: {
           title: 'Basic schemes of complex solutions',
