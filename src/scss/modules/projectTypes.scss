@@ -10,10 +10,17 @@ $unactiveHoverColor: #dddddd;
 
     &__switch {
         display: grid;
-        grid-template: 1fr / repeat(2, 300px);
-        grid-auto-rows: 400px;
+        grid-template-columns: repeat(2, minmax(175px, 450px));
+        column-gap: 4%;
+        row-gap: 2em;
+        padding: 0 1em;
         justify-content: space-around;
         transition: all 2s;
+
+        // SMALL MOBILE
+        @media (max-width: 469.98px) {
+            grid-template-columns: 1fr;
+        }
     }
 
     &__switch-item {
@@ -37,9 +44,14 @@ $unactiveHoverColor: #dddddd;
     &__switch-icon {
         position: relative;
         width: 100%;
-        height: 300px;
         border-radius: 15%;
         overflow: hidden;
+
+        &::before {
+            content: "";
+            display: block;
+            margin-top: 100%;
+        }
 
         & img {
             position: absolute;
@@ -90,6 +102,11 @@ $unactiveHoverColor: #dddddd;
         cursor: pointer;
         transition: all 0.3s;
 
+        // SMALL MOBILE
+        @media (max-width: 469.98px) {
+            font-size: 00.85rem;
+        }
+
         &:hover {
             background: $unactiveHoverColor;
         }
@@ -121,7 +138,7 @@ $unactiveHoverColor: #dddddd;
     background: white !important;
 
     &:after {
-        content: '';
+        content: "";
         display: block;
         position: absolute;
         height: 2px;
@@ -129,5 +146,5 @@ $unactiveHoverColor: #dddddd;
         background: $activeColor;
         left: 0;
         bottom: -1px;
-      }
+    }
 }

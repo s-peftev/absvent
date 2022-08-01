@@ -3,12 +3,18 @@
     flex-direction: row;
     padding-top: 1em;
 
+    // MOBILE
+    @media (max-width: 767.98px) {
+        flex-direction: column;
+        gap: 1em;
+    }
+
     &__plan {
         flex: 1 1 auto;
         position: relative;
 
         &::before {
-            content: '';
+            content: "";
             display: block;
             margin-top: 80%;
         }
@@ -26,11 +32,21 @@
     &__description {
         flex: 0 0 380px;
         margin-bottom: 1em;
+
+        // MOBILE
+        @media (max-width: 767.98px) {
+            flex: 0 0 auto;
+        }
     }
 
     &__text {
         font-size: 0.85rem;
         margin: 0 0 1em 0;
+
+        // MOBILE
+        @media (max-width: 767.98px) {
+            font-size: 0.65rem;
+        }
     }
 
     a {
@@ -44,6 +60,11 @@
         padding: 6px 12px;
         cursor: pointer;
         transition: all 0.3s;
+
+        // MOBILE
+        @media (max-width: 767.98px) {
+            font-size: 0.65rem;
+        }
 
         &:hover {
             background-color: rgba($color: rgb(71, 100, 101), $alpha: 0.2);
