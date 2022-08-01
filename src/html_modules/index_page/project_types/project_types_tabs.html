@@ -1,0 +1,14 @@
+<div class="project-types__tabs">
+    <input class="project-types__tab-radio" id="home_tab_control" type="radio" name="schemas" />
+    <input class="project-types__tab-radio" id="restaurant_tab_control" type="radio" name="schemas" />
+    <div class="project-types__tab-list">
+        <label id="home_tab_label" class="project-types__tab-label" for="home_tab_control"
+            data-index-text="main.project-types.tab_home.title"></label>
+        <label id="restaurant_tab_label" class="project-types__tab-label" for="restaurant_tab_control"
+            data-index-text="main.project-types.tab_resaurant.title"></label>
+    </div>
+
+    @@include('./tabs/home_type_tab.html')
+
+    @@include('./tabs/restaurant_type_tab.html')
+</div>

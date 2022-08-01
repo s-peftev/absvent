@@ -1,0 +1,19 @@
+/****** LOGO-SLIDER SECTION ******/
+.logo-slider {
+    margin: 3em 0;
+
+    // MOBILE
+    @media (max-width: 767.98px) {
+        display: none;
+    }
+}
+
+/****** PORTFOLIO-SLIDER SECTION ******/
+.portfolio-slider {
+    margin: 3em 0;
+
+    // MOBILE
+    @media (max-width: 767.98px) {
+        display: none;
+    }
+}

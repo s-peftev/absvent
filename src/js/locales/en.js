@@ -59,6 +59,31 @@ export default {
           p_1: 'You can order from us realization of system of conditioning, air heating, ventilation in a complex: we will develop for you the scheme of work of systems, we will select the equipment from leading brands, or, if necessary, we will develop the individual equipment especially for you, we will carry out installation and commissioning, and in the future we can provide you with service.',
           p_2: 'On our site you can get acquainted with the main types of air conditioning, air heating and ventilation systems.',
         },
+        'project-types': {
+          switch_home: 'Systems for home',
+          switch_resaurant: 'Systems for restaurants',
+          tab_home: {
+            title: 'Home',
+            link_btn: 'Read more',
+            schema_1: {
+              label: 'Centralized system',
+              description: 'The air conditioning scheme of the centralized system together with ventilation provides a high level of comfortable climatic conditions, and all internal equipment can be placed within one non-residential premises, at the entrance to the house, which simplifies further maintenance.',
+            },
+            schema_2: {
+              label: 'System with wall-mounted split systems',
+              description: 'Air-conditioning with wall-mounted split systems together with ventilation satisfies the basic needs of maintaining climatic conditions. Indoor units are located on the walls of each of the rooms in which you want to adjust the temperature.',
+            },
+            schema_3: {
+              label: 'System with duct-type split systems',
+              description: 'Air conditioning of duct-type split systems together with ventilation copes well with maintaining comfortable conditions. Indoor units are installed one for each of the rooms in which you want to adjust the temperature, usually in the ceiling space of adjacent non-residential premises.',
+            },
+          },
+          tab_resaurant: {
+            title: 'Restaurants',
+            content: 'Section in development',
+          },
+        },
+        /*
         schemas: {
           title: 'Basic schemes of complex solutions',
           btn: 'Read more',
@@ -68,7 +93,6 @@ export default {
               middle: 'with wall-type split systems',
               end: 'and ventilation',
             },
-            description: 'Air-conditioning with wall-mounted split systems together with ventilation satisfies the basic needs of maintaining climatic conditions. Indoor units are located on the walls of each of the rooms in which you want to adjust the temperature.',
           },
           schema_2: {
             name: {
@@ -76,7 +100,6 @@ export default {
               middle: 'with duct-type split systems',
               end: 'and ventilation',
             },
-            description: 'Air conditioning of duct-type split systems together with ventilation copes well with maintaining comfortable conditions. Indoor units are installed one for each of the rooms in which you want to adjust the temperature, usually in the ceiling space of adjacent non-residential premises.',
           },
           schema_3: {
             name: {
@@ -84,9 +107,9 @@ export default {
               middle: 'with centralized system',
               end: 'and ventilation',
             },
-            description: 'The air conditioning scheme of the centralized system together with ventilation provides a high level of comfortable climatic conditions, and all internal equipment can be placed within one non-residential premises, at the entrance to the house, which simplifies further maintenance.',
           },
         },
+        */
         team: {
           title: 'Our team',
           item_1: {

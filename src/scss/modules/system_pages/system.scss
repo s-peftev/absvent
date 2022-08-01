@@ -1,0 +1,110 @@
+.system {
+    margin: 10px 0 0 0;
+
+    &__row {
+        display: flex;
+        align-items: center;
+        margin-bottom: 1em;
+
+        &_reversed {
+            flex-direction: row-reverse;
+        }
+
+        // MOBILE
+        @media (max-width: 767.98px) {
+            flex-direction: column-reverse;
+        }
+    }
+
+    &__name {
+        font-size: 1.625rem;
+        border-bottom: 1px solid black;
+    }
+
+    &__drawing {
+        position: relative;
+        padding: 0 0 70% 0;
+
+        img {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+        }
+    }
+
+    &__text {
+        color: $dark_text_color;
+        margin: 0 0 1em 0;
+
+        &_indent {
+            text-indent: 1em;
+        }
+
+        &_conclusion-last {
+            border-bottom: 1px solid black;
+            padding-bottom: 2%;
+        }
+
+        &_li {
+            position: relative;
+            padding-left: 15px;
+            &::before {
+                content: "";
+                position: absolute;
+                top: 10px;
+                left: 0;
+                width: 8px;
+                height: 8px;
+                border: 1px solid black;
+                background-color: #000;
+                border-radius: 50%;
+            }
+        }
+    }
+
+    &__title {
+        font-weight: 700;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        margin: 0 0 1em 0;
+    }
+
+    &__float {
+        flex: 1 2 auto;
+        padding: 0 10px;
+
+        // MOBILE
+        @media (max-width: 767.98px) {
+            padding: 0;
+        }
+    }
+
+    &__picture {
+        flex: 1 1 700px;
+        min-width: 300px;
+        position: relative;
+        padding: 0 0 25% 0;
+
+        // MOBILE
+        @media (max-width: 767.98px) {
+            flex: 1 1 300px;
+        }
+
+        img {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+        }
+    }
+
+    &__subtitle {
+        font-weight: 700;
+        margin: 0 0 1em 0;
+    }
+}

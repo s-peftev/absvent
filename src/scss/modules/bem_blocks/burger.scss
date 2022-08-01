@@ -1,5 +1,4 @@
 .burger {
-
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -12,10 +11,10 @@
             height: 0;
 
             &::before {
-                transform: translate(0, 10px) rotate(45deg); 
+                transform: translate(0, 10px) rotate(45deg);
             }
             &::after {
-                transform:  translate(0, -10px) rotate(-45deg); 
+                transform: translate(0, -10px) rotate(-45deg);
             }
         }
     }
@@ -28,8 +27,9 @@
         background-color: $dark_bg_color;
         //transition: all 0.5s;
 
-        &::before, &::after {
-            content: '';
+        &::before,
+        &::after {
+            content: "";
             position: absolute;
             display: block;
             width: 100%;
