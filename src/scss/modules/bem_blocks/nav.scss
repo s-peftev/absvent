@@ -36,6 +36,7 @@
     &__title {
         padding: 10px 10px;
         cursor: pointer;
+        color: $dark_text_color;
 
         &:hover {
             transform: scale(1.1);

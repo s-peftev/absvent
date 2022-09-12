@@ -18,14 +18,12 @@
 @import "./modules/header.scss";
 @import "./modules/footer.scss";
 
-@import "./modules/index_page_modules/parallax.scss";
+@import "./modules/index_page_modules/directions.scss";
 @import "./modules/index_page_modules/advantages.scss";
 @import "./modules/index_page_modules/team.scss";
 @import "./modules/index_page_modules/sliders.scss";
-@import "./modules/index_page_modules/project_types.scss";
-@import "./modules/index_page_modules/project_tab.scss";
-@import "./modules/index_page_modules/schema.scss";
 
 @import "./modules/system_pages/system.scss";
+@import "./modules/system_pages/home_systems.scss";
 
 @import "./modules/portfolio_pages/portfolio.scss";

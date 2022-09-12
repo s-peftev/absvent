@@ -1,0 +1,41 @@
+$activeColor: #ffffff;
+$unactiveColor: #eeeeee;
+$unactiveHoverColor: #dddddd;
+
+.directions {
+    &__container {
+        display: flex;
+        justify-content: space-around;
+        padding-top: 10em;
+        padding-bottom: 10em;
+        gap: 1em;
+
+        // SMALL MOBILE
+        @media (max-width: 469.98px) {
+            flex-direction: column;
+            padding-top: 2em;
+            padding-bottom: 2em;
+        }
+    }
+
+    &__item {
+        cursor: pointer;
+        transition: all 0.2s;
+        color: #000;
+
+        &:hover {
+            transform: scale(1.1);
+        }
+    }
+
+    &__icon {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 1em;
+    }
+
+    &__name {
+        font-weight: 700;
+        text-align: center;
+    }
+}

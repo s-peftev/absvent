@@ -5,9 +5,13 @@ import buildCentralizedTypePage from './page_builders/buildCentralizedTypePage.j
 import buildExamplePage from './page_builders/buildExamplePage.js';
 import buildObjectsHomePage from './page_builders/buildObjectsHomePage.js';
 import buildObjectsOtherPage from './page_builders/buildObjectsOtherPage.js';
+import buildHomeSystemsPage from './page_builders/buildHomeSystemsPage.js';
+import buildRestaurantSystemsPage from './page_builders/buildRestaurantSystemsPage.js';
 
 const ROUTER = {
-  '/': (i18next, setSelectedProjectType) => buildIndexPage(i18next, setSelectedProjectType),
+  '/': (i18next) => buildIndexPage(i18next),
+  '/home-systems.html': (i18next) => buildHomeSystemsPage(i18next),
+  '/restaurant-systems.html': (i18next) => buildRestaurantSystemsPage(i18next),
   '/wall-type.html': (i18next) => buildWallTypePage(i18next),
   '/duct-type.html': (i18next) => buildDuctTypePage(i18next),
   '/centralized-type.html': (i18next) => buildCentralizedTypePage(i18next),
@@ -63,14 +67,6 @@ const burgerMenuToggle = () => {
   burger.classList.toggle('burger_active');
 };
 
-const selectProjectType = (value) => {
-  document.querySelector('.project-types__switch').style.display = 'none';
-  document.querySelector(`#${value}_tab_control`).checked = true;
-  const tabs = document.querySelector('.project-types__tabs');
-  tabs.style.display = 'block';
-  tabs.scrollIntoView();
-};
-
 export default (i18next, action) => (path, value) => {
   switch (path) {
     case 'burgerMenu':
@@ -79,10 +75,6 @@ export default (i18next, action) => (path, value) => {
 
     case 'local':
       changeLanguage(i18next, value, action);
-      break;
-
-    case 'selectedProjectType':
-      selectProjectType(value);
       break;
 
     default:

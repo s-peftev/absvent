@@ -5,21 +5,16 @@ import render from './modules/render.js';
 const initialState = {
   burgerMenu: 'inactive',
   local: '',
-  selectedProjectType: 'none',
 };
 
 export default (i18next, lang = 'uk', state = initialState) => {
   let observedState;
 
-  const setSelectedProjectType = (projectType) => {
-    observedState.selectedProjectType = projectType;
-  };
-
   const setLocal = (local) => {
     observedState.local = local;
   };
 
-  observedState = onChange(state, render(i18next, setSelectedProjectType));
+  observedState = onChange(state, render(i18next));
 
   window.addEventListener('load', () => {
     setLocal(lang);

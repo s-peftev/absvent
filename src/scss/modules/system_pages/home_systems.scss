@@ -1,0 +1,110 @@
+.schema a {
+    color: white;
+}
+
+.schema__container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+    -ms-flex-pack: end;
+    justify-content: flex-end;
+    height: 100%;
+    padding-right: 5% !important;
+    padding-left: 5% !important;
+}
+
+.schema__container_left {
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+}
+
+.schema__content {
+    max-width: 450px;
+    height: 100%;
+    position: relative;
+    padding: 0.8em;
+    color: white;
+    z-index: 1;
+}
+
+.schema__content::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #333;
+    opacity: 0.6;
+    z-index: -2;
+}
+
+.schema__name {
+    border-bottom: 1px solid white;
+    text-transform: uppercase;
+    margin: 0 0 0.8em 0;
+}
+
+.schema__name_bold {
+    font-weight: 700;
+}
+
+.schema__description {
+    margin: 0 0 4em 0;
+}
+
+.schema__btn {
+    border: 1px solid white;
+    display: inline-block;
+    padding: 6px 12px;
+    cursor: pointer;
+    -webkit-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+}
+
+.schema__btn:hover {
+    background-color: rgba(236, 232, 232, 0.2);
+    -webkit-box-shadow: 2px -2px 30px 5px rgba(236, 232, 232, 0.2);
+    box-shadow: 2px -2px 30px 5px rgba(236, 232, 232, 0.2);
+}
+
+.schema__btn:active {
+    -webkit-transform: scale(0.95);
+    -ms-transform: scale(0.95);
+    transform: scale(0.95);
+}
+
+.schemas__body {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    gap: 2em;
+}
+
+.schemas__item {
+    height: 550px;
+}
+
+.schemas__item_wall {
+    background: url("../img/schemas_bg/wall.jpg") 0 0/cover no-repeat fixed;
+}
+
+.schemas__item_duct {
+    background: url("../img/schemas_bg/duct.jpg") 0 0/cover no-repeat fixed;
+}
+
+.schemas__item_central {
+    background: url("../img/schemas_bg/central.jpg") 0 0/cover no-repeat fixed;
+}
+
+.schema__link-btn {
+    display: block;
+    margin-bottom: 0.8em;
+}

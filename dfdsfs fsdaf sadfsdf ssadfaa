@@ -1,0 +1,197 @@
+[33mcommit 8d799d4550af3f9718d6028d123f325172bfa393[m[33m ([m[1;36mHEAD -> [m[1;32mindex_page_rebuilding[m[33m, [m[1;31morigin/index_page_rebuilding[m[33m)[m
+Author: s-peftev <s.peftev@gmail.com>
+Date:   Sat Sep 10 16:09:22 2022 +0300
+
+    new branch first commit
+
+[33mcommit 76220bfd4dc5c33306ef49c33b81358f8f54d61a[m[33m ([m[1;31morigin/master[m[33m, [m[1;31morigin/HEAD[m[33m, [m[1;32mmaster[m[33m)[m
+Author: s-peftev <s.peftev@gmail.com>
+Date:   Mon Aug 1 14:36:12 2022 +0300
+
+    refactored: html and scss divided on modules
+
+[33mcommit b874c96b267f26243019719f6a0f43443c550b85[m
+Author: s-peftev <s.peftev@gmail.com>
+Date:   Mon Aug 1 13:13:06 2022 +0300
+
+    added: project types adaptive
+
+[33mcommit 37bf2de676088f18ff14d315043103200155fa20[m
+Author: s-peftev <s.peftev@gmail.com>
+Date:   Sun Jul 31 23:33:10 2022 +0300
+
+    added: project types without adaptive
+
+[33mcommit 6594d0057f4732a1206a8d0acab77dc9529441da[m
+Author: s-peftev <s.peftev@gmail.com>
+Date:   Sun Jul 31 14:54:51 2022 +0300
+
+    refactored: text filling
+
+[33mcommit 0713b6a2245facae3d8048ec6e37602914febccd[m
+Author: s-peftev <s.peftev@gmail.com>
+Date:   Tue May 24 15:35:13 2022 +0300
+
+    add: language save cockies
+
+[33mcommit 8678f386d51d5a728366d4ab8f6ea3419ecc15a9[m
+Author: s-peftev <s.peftev@gmail.com>
+Date:   Mon May 23 17:53:49 2022 +0300
+
+    complete: objects other page
+
+[33mcommit f229ecbb927a3ff1d38f614f5918de4b9e5a42a1[m
+Author: s-peftev <s.peftev@gmail.com>
+Date:   Mon May 23 17:28:54 2022 +0300
+
+    complete: objects home page
+
+[33mcommit 002e0579ce6fe87010be2f726ddb79da999173f5[m
+Author: s-peftev <s.peftev@gmail.com>
+Date:   Mon May 23 14:37:04 2022 +0300
+
+    complete: example page
+
+[33mcommit 027677d5d8ecab3a4f581ce9e0f4be77248bf1a1[m
+Author: s-peftev <s.peftev@gmail.com>
+Date:   Mon May 23 13:58:26 2022 +0300
+
+    in process: example page
+
+[33mcommit ea4d73153ac8f00dd3d633d279a1933dba1c76b5[m
+Author: s-peftev <s.peftev@gmail.com>
+Date:   Mon May 23 12:26:48 2022 +0300
+
+    fix: schemas adaptive bg none
+
+[33mcommit dc9492986296616beae4785a028d3da48e661d61[m
+Author: s-peftev <s.peftev@gmail.com>
+Date:   Mon May 23 12:18:36 2022 +0300
+
+    fix: schemas adaptive bg none
+
+[33mcommit 965c823e857719f21c8f14e2ed395eae801f4f98[m
+Author: s-peftev <s.peftev@gmail.com>
+Date:   Mon May 23 12:12:11 2022 +0300
+
+    fix: schemas adaptive bg none
+
+[33mcommit 70258107a268d751235798625578bcd5a664cdec[m
+Author: s-peftev <s.peftev@gmail.com>
+Date:   Sun May 22 16:26:21 2022 +0300
+
+    complete: centralized-type page
+
+[33mcommit 046264467b78a13ec41592ffa34968fbe96be62e[m
+Author: s-peftev <s.peftev@gmail.com>
+Date:   Sun May 22 14:54:52 2022 +0300
+
+    complete: duct-type page
+
+[33mcommit 6335e8c129f5a0343662d79e92c8006eea88fa78[m
+Author: s-peftev <s.peftev@gmail.com>
+Date:   Sun May 22 13:43:38 2022 +0300
+
+    complete: wall-type page
+
+[33mcommit f62549969d80411c73912b900287007a73a5298e[m
+Author: s-peftev <s.peftev@gmail.com>
+Date:   Thu May 19 19:15:25 2022 +0300
+
+    in process: wall-type page
+
+[33mcommit b55a14f74930ca87b3ff3bda09e68ab49d3054ac[m
+Author: s-peftev <s.peftev@gmail.com>
+Date:   Thu May 19 18:25:07 2022 +0300
+
+    in process: wall-type page 1
+
+[33mcommit e1c9432249f9110386e2f67c85bf37a9bae5b4f1[m
+Author: s-peftev <s.peftev@gmail.com>
+Date:   Thu May 19 14:44:35 2022 +0300
+
+    fix: footer adaptive
+
+[33mcommit 07e2a577f79319e0816490be80aac50ab9bbaa62[m
+Author: s-peftev <s.peftev@gmail.com>
+Date:   Tue May 17 15:39:14 2022 +0300
+
+    add: portfolio slider(index page), footer
+
+[33mcommit d1e32bff7eb32e29f5273e7b58dfdfbc86ccb99e[m
+Author: s-peftev <s.peftev@gmail.com>
+Date:   Mon May 16 17:32:58 2022 +0300
+
+    in process: our team
+
+[33mcommit 84cce587fd090afd6ad322fa722a40ed17befab4[m
+Author: s-peftev <s.peftev@gmail.com>
+Date:   Mon May 16 17:22:43 2022 +0300
+
+    in process: our team
+
+[33mcommit 76b303c56c831bb5a03003827fe454b3938b825b[m
+Author: s-peftev <s.peftev@gmail.com>
+Date:   Mon May 16 16:40:07 2022 +0300
+
+    add: schemas(index-page)
+
+[33mcommit 5071ef988a37f37aecfb26d9aa0dfb9109edd94a[m
+Author: s-peftev <s.peftev@gmail.com>
+Date:   Sun May 15 18:18:47 2022 +0300
+
+    add: about_section / logo-slider_section
+
+[33mcommit d4b065f64278914b55d9b7716edb6e23af95bd33[m
+Author: s-peftev <s.peftev@gmail.com>
+Date:   Thu May 12 15:27:07 2022 +0300
+
+    fix: burger menu issues
+
+[33mcommit 2848b3f08d462f6af1874a491d7ec6178a8bc2bc[m
+Author: s-peftev <s.peftev@gmail.com>
+Date:   Wed May 11 01:10:15 2022 +0300
+
+    fix: landscape adaptive
+
+[33mcommit 396ea6ae241332908d6984c71ae048de9880ef3d[m
+Author: s-peftev <s.peftev@gmail.com>
+Date:   Wed May 11 01:05:01 2022 +0300
+
+    fix: landscape adaptive
+
+[33mcommit e8e3e2b9210dcf1974064bcfcd00a957d9005b44[m
+Author: s-peftev <s.peftev@gmail.com>
+Date:   Wed May 11 00:29:20 2022 +0300
+
+    fix: deploy error
+
+[33mcommit a371868d095d04a5b21260cae96779d663f9cdb3[m
+Author: s-peftev <s.peftev@gmail.com>
+Date:   Wed May 11 00:16:59 2022 +0300
+
+    fix: deploy error
+
+[33mcommit d4099c2a0d3e7fad7433439d2bd6a6aacc5f37ee[m
+Author: s-peftev <s.peftev@gmail.com>
+Date:   Wed May 11 00:14:23 2022 +0300
+
+    fix: deploy error
+
+[33mcommit 9352e6fa7fcb6495a7abe69caac5f143fe057a19[m
+Author: s-peftev <s.peftev@gmail.com>
+Date:   Tue May 10 22:16:55 2022 +0300
+
+    fix: MIME Type issue
+
+[33mcommit dc980f37793d09f1e7d1d7fae6e10c080e907c5d[m
+Author: s-peftev <s.peftev@gmail.com>
+Date:   Tue May 10 21:56:23 2022 +0300
+
+    add:(header:ua+en locals, lang changing, adaptive, burger) && (main page parallax section)
+
+[33mcommit 2a2e9060a6c933f55efdb4fdd50ccf566363579b[m
+Author: s-peftev <s.peftev@gmail.com>
+Date:   Tue May 10 00:57:44 2022 +0300
+
+    init
